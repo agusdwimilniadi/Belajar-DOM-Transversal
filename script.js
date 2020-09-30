@@ -16,5 +16,6 @@ for (let i = 0; i < close.length; i++) {
         //close[i].parentElement.style.display = 'none';  /// INI PEMRAKTEKAN DOM TRANSVERSAL
 
         e.target.parentElement.style.display = 'none';
+        e.preventDefault()
     });
 };

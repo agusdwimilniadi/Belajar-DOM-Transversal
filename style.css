@@ -60,6 +60,9 @@ body {
     right: 30px;
     cursor: pointer;
 }
+.card a {
+    text-decoration: none;
+}
 
 .card:hover .close {
     color: red;
