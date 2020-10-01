@@ -17,5 +17,13 @@ for (let i = 0; i < close.length; i++) {
 
         e.target.parentElement.style.display = 'none';
         e.preventDefault()
+        e.stopPropagation() // Untuk menstop cek element diatasnya, atau kalo kurang jelas ini bisa di hapus lalu klik di tanda X kan yang terjadi itu fungsi .card nya bukan fungsi tanda silangnya, maka dari itu ada ini
     });
 };
+
+const kartuSemua = document.querySelectorAll('.card');
+kartuSemua.forEach(function(card){
+    card.addEventListener('click', function(){
+        alert('ok')
+    })
+});
